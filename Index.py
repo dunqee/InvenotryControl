@@ -1,11 +1,10 @@
-from flask import Flask
+from flask import Flask, render_template, request,redirect, url_for
+
 app = Flask(__name__)
 
 @app.route('/')
 def Welcome():
-    return "Welcome to my new Flask Application"
-
-
+    return render_template("loginTemplate.html")
 
 if __name__ == '__main__':
     app.run()

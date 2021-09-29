@@ -1,4 +1,7 @@
+from flask.templating import render_template
+from flask.wrappers import Request
 from flask_login import UserMixin
+
 from werkzeug.security import generate_password_hash, check_password_hash
 
 class User(UserMixin):
